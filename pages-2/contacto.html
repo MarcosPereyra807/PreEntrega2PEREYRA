@@ -4,57 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papelera El puente</title>
-    <link rel="stylesheet" href="../assets-2/styles/styles.css"</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets-2/styles/styles.css">
+</head>
 <body>
-    <header>
-        <h2>Papelera El puente</h2>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./ofertas.html">Oferta</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./envios.html">Envios</a></li>
-        </ul>
-    </nav>
-    
-    <section>
-        <article>
-            <h2>Contacto</h2>
-    <h3>¡Contactate con nosotros!</h3>
-    <form action="">
-    <input class="inputsContacto" type="text" placeholder="ingresa tu nombre completo">
-    <input class="inputsContacto"  type="email" placeholder="ingresa tu email">
-    <input class="inputsContacto"  type="text" placeholder="ingresa tu numero de telefono">
-    </form>
-        
-    <div>
-        <input type="submit" value="Enviar">
-    </div>
-        </article>
 
-        <article>
-    <h3>Telefono</h3>
-    <p>11 3890-3080</p>
-        </article>
     
-        <article>
-    <h3>Redes sociales</h3>
-    <ul>
-        <li>Instagram</li>
-        <li>Facebook</li>
-    </ul>
-        </article>
-    </section>
+    <main class="grid-container">
+
+        <header class="header">
+            <h2>Papelera El puente</h2>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="letraNav">Inicio</a></li>
+                <li><a href="./ofertas.html" class="letraNav">Oferta</a></li>
+                <li><a href="./productos.html" class="letraNav">Productos</a></li>
+                <li><a href="./contacto.html" class="letraNav">Contacto</a></li>
+                <li><a href="./envios.html" class="letraNav">Envios</a></li>
+            </ul>
+        </nav>
+
+
+
+        <section id="boxContacto" class="boxSection">
+            <h2 id="h2Contacto" class="centre">¡Contactate con nosotros!
+            </h2>
+            <article class="flexContacto">
+                <form action="">
+                    <input class="inputsContacto" type="text" placeholder="ingresa tu nombre completo">
+                    <input class="inputsContacto"  type="email" placeholder="ingresa tu email">
+                    <input class="inputsContacto"  type="text" placeholder="ingresa tu numero de telefono">
+                    <input id="inputMensaje" class="inputsContacto" type="text" placeholder="Mensaje">
+                </form>
+                <div class="boxInput">
+                    <input type="submit" value="Enviar">
+                </div>
+        
+
+            </article>
+
+            <article class="flexContacto">
+                <h3>Telefono</h3>
+                <p>11 3890-3080</p>
+            </article>
     
-    <footer>
-        <ul>
-            <li>Descripcion</li>
-            <li>Contacto</li>
-            <li>Redes sociales</li>
-        </ul>
-        </footer>
+            <article class="flexContacto">
+                <h3>Redes sociales</h3>
+                
+            <div id="iconContacto">
+                <ul>
+                    <li><a href="https://www.facebook.com/markitos.jhon/?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/papelera.elpuente/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            </article>
+        </section>        
+        
+        <aside class="aside">
+        </aside>
+            
+        <footer class="footer">
+            <ul>
+                <li><a href="https://www.facebook.com/markitos.jhon/?locale=es_LA" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/papelera.elpuente/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+            </footer>
+    </main>
+
 </body>
 </html>

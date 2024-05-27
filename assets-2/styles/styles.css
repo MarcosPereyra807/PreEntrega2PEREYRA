@@ -1,56 +1,271 @@
-header{
-    color: blue;
-    background-color:chocolate;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    background-color: antiquewhite;
+}
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "navigation navigation navigation"
+    "contenido contenido publicidad"
+    "footer footer footer";
+    grid-template-columns: auto auto 15%;
+    grid-template-rows: 10% 10% auto 10%;
+    overflow: scroll;
+}
+
+.header{
+    grid-area: header;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-    font-weight: 900;
-}
-
-h1{ 
+    color:rgb(19, 19, 125);
+    background-color:rgb(214, 167, 48) ;
     
-    margin-bottom: 0px;
 }
 
-h2{
-    margin-bottom: 0px;
+h1{
+    font-size: 35px;
+    font-weight: 15px;
 }
 
-nav{
-    background-color: chocolate;
+header h2{
+    font-size: 35px;
+    font-weight: 15px;
 }
 
-nav ul{
+
+.nav{
+    grid-area: navigation;
+    background-color: rgb(214, 167, 48);
+    margin-top: 5px;
+
+}
+
+.nav ul{
     list-style: none;
     padding-top: 3px;
-    padding-top: 3px;
     padding-bottom: 3px;
-    display: inline-block;
     
 }
 
-nav ul li {
-    display: inline;
-    color: blue;
-    padding-left: 3px;
-    padding-right: 3px;
+.nav ul li {
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    margin: 10px 20px 20px 20px;
+    border-radius: 25px;
 }
 
-nav ul li a{
-    text-decoration: dashed;
+.letraNav{
+    text-decoration: none;
+    color:rgb(19, 19, 125);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.letraNav:hover{
+    color: rgb(219, 227, 247);
 }
 
-footer{
+
+.boxSection{
+    grid-area: contenido;
+    
+}
+
+.aside{
+    grid-area: publicidad;
+    background-color:rgb(195, 180, 160) ;
+    border:1px solid black;
+    height: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.centre{
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    color: ;
+    background-color:rgb(214, 167, 48);
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.footer ul li i{
+    font-size: 25px;
     color: blue;
-    background-color: chocolate;
+}
+
+.footer ul li i:hover{
+    color: aliceblue;
+}
+
+.footer ul li i:visited{
+    color: blue;
+}
+
+
+.productsTitle{
+    grid-area: titulo;
+text-align: center;
+}
+
+.products-container{
+    display: grid;
+    grid-template-areas: 
+    "imagen imagen imagen"
+    "imagen imagen imagen"
+    "imagen imagen imagen";
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    column-gap: 20px;
+    row-gap: 100px;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 15px;
+    margin-bottom: ;
+}
+
+.products-container .imagenProducto{
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.products-container .imagenProducto:hover{
+    box-shadow: 5px 5px 20px rgb(171, 171, 238);
+    transform: translate(-3%);
+}
+
+
+.imagenProducto{
+    grid-area: imagen;
+    height: 120px;
+    width: 115px;
+    padding: 10px;
+}
+
+
+
+.oferta{
+    margin-bottom:0px;
+    background-color: orangered;
+    color: aliceblue;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+
+.imgPapelera{
+    height: 500px;
+    width: 500px;
+}
+
+.papeleraContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#boxIndex{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexIndex{
+    
+    padding: 20px;
+    
+}
+
+#articleIndex{
+    height: 100vh;
+    font-size: 2.5rem;
+    align-items: ;
+}
+
+#boxContacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: ;
+    
+    align-items: center;
+    justify-items: ;
+}
+
+#h2Contacto{
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+
+}
+
+.flexContacto{
+    width: 50vw;
 }
 
 .inputsContacto{
     display: block;
     margin-bottom: 10px;
+    height: 2rem;
+    width: 300px;
+    margin-top: 20px;
+    border: solid 2px rgb(168, 93, 39);
 }
 
-.imagenes{
-    display: block;
-    margin-bottom: 10px ;
-border: dashed 5px blue;
+#iconContacto ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+#iconContacto ul li i{
+
+    color: black;
+    font-size: 30px;
+}
+
+#iconContacto ul li i:hover{
+color: rgb(162, 178, 193);
+}
+
+#iconContacto ul li i:visited{
+    color: black;
+}
+
+
+#envioGIF{
+    margin-top: 30px;
+}
+
+#inputMensaje{
+    height: 5rem;
+    width: 350px;
+    
 }
