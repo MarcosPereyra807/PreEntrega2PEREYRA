@@ -24,7 +24,7 @@
         .nav{
             margin-top: 0px;
             border: solid 1px black;
-            position: ;
+            height: 100vh;
         }
         .nav ul{
             list-style: none;
@@ -32,7 +32,7 @@
             padding-bottom: 0px;
         }
         .nav ul li {
-            text-align: start;
+            text-align: center;
             display: block;
             margin-top:  40px ;
             margin-left: 0;
@@ -63,6 +63,6 @@
             justify-items: stretch;
             align-items: stretch;
             margin-top: 15px;
-            margin-bottom: ;
+        
         }
     }
