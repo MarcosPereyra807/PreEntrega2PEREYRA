@@ -1,0 +1,26 @@
+{
+  "name": "preentrega_pereyra",
+  "version": "1.0.0",
+  "description": "En este proyecto estamos creando el sitio web de Papelera \"El puente\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosPereyra807/PreEntrega2PEREYRA.git"
+  },
+  "keywords": [
+    "papelera",
+    "descartables",
+    "papel",
+    "libreria",
+    "comerciantes"
+  ],
+  "author": "Marcos Pereyra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosPereyra807/PreEntrega2PEREYRA/issues"
+  },
+  "homepage": "https://github.com/MarcosPereyra807/PreEntrega2PEREYRA#readme"
+}

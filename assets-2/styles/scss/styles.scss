@@ -39,32 +39,30 @@ h1{
     font-weight: 15px;
 }
 
-header h2{
+header{
+    h2{
     font-size: 35px;
     font-weight: 15px;
+    }
 }
-
 
 .nav{
     grid-area: navigation;
     background-color: rgb(214, 167, 48);
     margin-top: 5px;
     height: 40px;
-}
-
-.nav ul{
+    ul{
     list-style: none;
     padding-top: 3px;
     padding-bottom: 3px;
-    
-}
-
-.nav ul li {
-    text-align: center;
-    display: inline-block;
-    width: 80px;
-    margin: 10px 20px 20px 20px;
-    border-radius: 25px;
+    li {
+        text-align: center;
+        display: inline-block;
+        width: 80px;
+        margin: 10px 20px 20px 20px;
+        border-radius: 25px;
+            }
+        }
 }
 
 .letraNav{
@@ -101,18 +99,18 @@ header h2{
     background-color:rgb(214, 167, 48);
     position: absolute;
     bottom: 0;
-    width: 100vw;
-}
-
-.footer ul li{
+    width: 100vw; 
+    ul{ 
+        li{
     list-style: none;
     display: inline-block;
     margin: 10px 10px;
-}
-
-.footer ul li i{
-    font-size: 25px;
-    color: blue;
+            i{
+                font-size: 25px;
+                color: blue;
+            }
+        }
+    }
 }
 
 .footer ul li i:hover{
@@ -125,7 +123,6 @@ header h2{
 
 
 .productsTitle{
-    grid-area: titulo;
 text-align: center;
 }
 
@@ -237,16 +234,18 @@ text-align: center;
     border: solid 2px rgb(168, 93, 39);
 }
 
-#iconContacto ul li{
+#iconContacto{ 
+    ul{ 
+        li{
     list-style: none;
     display: inline-block;
     margin: 10px 10px;
-}
-
-#iconContacto ul li i{
-
-    color: black;
-    font-size: 30px;
+            i{
+        color: black;
+        font-size: 30px;
+            }
+        }
+    }
 }
 
 #iconContacto ul li i:hover{
@@ -257,12 +256,16 @@ color: rgb(162, 178, 193);
     color: black;
 }
 
+#inputMensaje{
+    height: 5rem;
+    width: 350px;
+}
+
+input::placeholder{
+    padding-left: 5px;
+}
 
 #envioGIF{
     margin-top: 30px;
 }
 
-#inputMensaje{
-    height: 5rem;
-    width: 350px;
-}
