@@ -25,14 +25,16 @@
     list-style: none;
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-left: 0;
+    justify-self: flex-start;
   }
   .nav ul li {
     text-align: center;
     display: block;
     margin-top: 40px;
-    margin-left: 0;
     font-size: 0.8rem;
     text-decoration: underline;
+    padding-right: 30px;
   }
   .aside {
     grid-area: logo;
@@ -50,14 +52,15 @@
     border: solid 1px black;
     background-color: rgb(224, 139, 42);
   }
-  .inputsContacto {
-    width: 200px;
+  #contactoTitle {
+    text-align: center;
+    width: 75vw;
   }
-  #inputMensaje {
-    width: 250px;
-  }
-  input::placeholder {
-    padding-left: 5px;
+  #fotoContacto {
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
