@@ -83,12 +83,19 @@ header{
 .aside{
     grid-area: publicidad;
     background-color:rgb(195, 180, 160) ;
-    border:1px solid black;
-    height: 250px;
+    height: 150px;
+    width: 150px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 40px;
 }
 
+.logoPapelera{
+    height: 150px;
+    width: 150px;
+    margin-right: 0px;
+    border:1px solid black;
+}
 
 .centre{
     text-align: center;

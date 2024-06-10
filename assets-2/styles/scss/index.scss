@@ -1,18 +1,20 @@
 @media screen and (max-width: 480px) {
 
     .grid-container{
-        grid-template-areas: "navigation header header"
-        "navigation contenido publicidad"
+        grid-template-areas: "logo header header"
+        "navigation contenido contenido"
         "navigation footer footer";
         height: 100vh;
         width: 100vw;
-        grid-template-columns: 20% auto 15%;
+        grid-template-columns: 20% auto;
         grid-template-rows: 90px 1fr 1fr 70px;
         }
         
 
         .header{
+            width: 80vw;
             border: solid 1px black;
+            background-color: rgb(224, 139, 42);
         }
 
         h1{
@@ -25,6 +27,7 @@
             margin-top: 0px;
             border: solid 1px black;
             height: 100vh;
+            background-color: rgb(224, 139, 42);
     
             ul {
                 list-style: none;
@@ -43,12 +46,22 @@
         }
 
         .aside{
-            height: 100vh;
+            grid-area: logo;
+            height: 90px;
+            
+        }
+
+        .logoPapelera{
+            height: 90px;
+            width: 20vw;
+            border: solid 1px black;
+            border-left: none;
         }
     
         #boxIndex{
             display: flex;
-            height: 100vh;
+            height: 80vh;
+            width: 80vw;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -70,5 +83,6 @@
 
         .footer{
             border: solid 1px black;
+            background-color: rgb(224, 139, 42);
         }
     }
