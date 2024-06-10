@@ -37,6 +37,8 @@
   .aside {
     grid-area: logo;
     height: 90px;
+    margin-left: 0px;
+    width: 20vw;
   }
   .logoPapelera {
     height: 90px;
