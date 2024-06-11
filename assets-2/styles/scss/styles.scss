@@ -82,19 +82,58 @@ header{
 
 .aside{
     grid-area: publicidad;
-    background-color:rgb(195, 180, 160) ;
-    height: 150px;
-    width: 150px;
+    display: flex;
+    background-color: rgb(214, 167, 48);
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-left: 40px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 40px;
+    border: solid 1px rgb(77, 9, 173);
+    border-radius: 30px;
+    img{
+        height: 120px;
+        width: 120px;
+        justify-content: center;
+        align-self: center;
+        border:1px solid black;
+        border-radius: 40%;
+        transition: transform 1s linear;
+        position: absolute;
+    }
 }
 
-.logoPapelera{
-    height: 150px;
-    width: 150px;
-    margin-right: 0px;
-    border:1px solid black;
+aside:hover img{
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+.iconAside{
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: blue;
+}
+
+aside:hover .iconAside{
+    color: aliceblue;
+}
+
+.nroWSP{
+    align-self: center;
+    margin-bottom: 120px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 630;
+}
+
+.nroWSPcontacto{
+align-self: flex-start;
+font-size: 0.9rem;
 }
 
 .centre{
@@ -126,6 +165,10 @@ header{
 
 .footer ul li i:visited{
     color: blue;
+}
+
+.wspResponsive{
+    display: none;
 }
 
 
@@ -219,64 +262,9 @@ text-align: center;
     height: 300px;
     margin-left: 30px;
 }
-/*#boxContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-
-#h2Contacto{
-    font-size: 2rem;
-    margin-bottom: 15px;
-
-
-}
-
-.flexContacto{
-    width: 50vw;
-}
-
-.inputsContacto{
-    display: block;
-    margin-bottom: 10px;
-    height: 2rem;
-    width: 300px;
-    margin-top: 20px;
-    border: solid 2px rgb(168, 93, 39);
-}
-
-#iconContacto{ 
-    ul{ 
-        li{
-    list-style: none;
-    display: inline-block;
-    margin: 10px 10px;
-            i{
-        color: black;
-        font-size: 30px;
-            }
-        }
-    }
-}
-
-#iconContacto ul li i:hover{
-color: rgb(162, 178, 193);
-}
-
-#iconContacto ul li i:visited{
-    color: black;
-}
-
-#inputMensaje{
-    height: 5rem;
-    width: 350px;
-}
-
-input::placeholder{
-    padding-left: 5px;
-}*/
-
 #envioGIF{
     margin-top: 30px;
 }
+
+
 
