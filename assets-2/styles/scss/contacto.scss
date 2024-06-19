@@ -34,6 +34,7 @@
                 padding-bottom: 0px;
                 padding-left: 0;
                 justify-self: flex-start;
+
     
                 li {
                     text-align: center;
@@ -41,7 +42,7 @@
                     margin-top: 40px;
                     font-size: 0.8rem;
                     text-decoration: underline;
-                    padding-right: 30px;
+                    padding-right: 100px;
                 }
             }
         }
@@ -87,7 +88,7 @@
 
         #contactoTitle{
             text-align: center;
-            width:75vw;
+            width: 260px;
         }
         
         #fotoContacto{
@@ -95,7 +96,8 @@
             margin-right: auto;
             margin-top: 30px;
             margin-bottom: 30px;
-            width: 65vw;
+            width: 250px;
+            text-align: center;
         }
         
 }

@@ -34,7 +34,7 @@
     margin-top: 40px;
     font-size: 0.8rem;
     text-decoration: underline;
-    padding-right: 30px;
+    padding-right: 100px;
   }
   .aside {
     grid-area: logo;
@@ -70,14 +70,15 @@
   }
   #contactoTitle {
     text-align: center;
-    width: 75vw;
+    width: 260px;
   }
   #fotoContacto {
     margin-left: 30px;
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 65vw;
+    width: 250px;
+    text-align: center;
   }
 }
 
