@@ -29,12 +29,35 @@
             </ul>
         </nav>
         
-        <main class="boxSection">
-            <article class="centre">
-                <h2> ENVIOS SIN CARGO EN TODA ZONA SUR</h2>
+        <main id="boxEnvios" class="boxSection">
 
-                <img id="envioGIF" src="../assets-2/images/envio.gif" alt="caja de envio">
+            <article id="flexEnvios" class="centre">
+                <h2 id="titleEnvios">¡Envíos sin cargo por la zona!</h2>
+                <iframe id="maps"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.88253275549!2d-58.440783111145024!3d-34.73335519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccdc020d8e2cb%3A0xa740bcd8a3cebdfb!2sEl%20Puente!5e0!3m2!1ses-419!2sar!4v1720821425811!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article> 
+
+            <article id="formEnvios">
+                <h3>¡Calcula tu envio!</h3>
+                <h4>Envía los siguientes datos:</h4>
+
+                <form id="form" action="">
+                    <label class="labelEnvios" for="nombreEnvios">Nombre completo</label>
+                    <input class="inputEnvios" type="text" name="nombreEnvios">
+
+                    <label class="labelEnvios" for="telefonoEnvios">Telefono/Celular</label>
+                    <input class="inputEnvios" type="tel" name="telefonoEnvios">
+
+                    <label class="labelEnvios" for="direccionEnvios">Direccion</label>
+                    <input class="inputEnvios" type="text" name="direccionEnvios">
+
+                    <label class="labelEnvios" for="locEnvios">Localidad</label>
+                    <input class="inputEnvios" type="text" name="locEnvios">
+                </form>
+
+                <button class="botonEnviar" type="submit">Enviar</button>
             </article>
+
+
         </main>        
         
         <aside class="aside">
