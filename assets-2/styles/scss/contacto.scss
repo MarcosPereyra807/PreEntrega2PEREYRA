@@ -1,3 +1,5 @@
+@import "bordes";
+
 @media screen and (max-width: 480px) {
     .grid-container{
         grid-template-areas: "logo header header"
@@ -12,7 +14,8 @@
 
         .header{
             width: 80vw;
-            border: solid 1px black;
+            @include bordeSolido;
+            border-radius: 0%;
             background-color: rgb(224, 139, 42);
         }
 
@@ -24,7 +27,8 @@
 
         .nav {
             margin-top: 0px;
-            border: solid 1px black;
+            @include bordeSolido;
+            border-radius: 0%;
             height: 100vh;
             background-color: rgb(224, 139, 42);
     
@@ -41,7 +45,6 @@
                     display: block;
                     margin-top: 40px;
                     font-size: 0.8rem;
-                    text-decoration: underline;
                     padding-right: 100px;
                 }
             }

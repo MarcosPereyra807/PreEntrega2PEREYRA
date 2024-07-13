@@ -1,3 +1,6 @@
+@import "colores";
+@import "bordes";
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@
 body{
     min-height: 100vh;
     position: relative;
-    background-color: antiquewhite;
+    background-color: $bgColorBody;
 }
 .grid-container{
     display: grid;
@@ -26,8 +29,8 @@ body{
 .header{
     grid-area: header;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:rgb(19, 19, 125);
-    background-color:rgb(214, 167, 48) ;
+    color: $colorEstructura;
+    background-color:$bgColorEstructura;
     
 }
 
@@ -49,7 +52,7 @@ header{
 
 .nav{
     grid-area: navigation;
-    background-color: rgb(214, 167, 48);
+    background-color: $bgColorEstructura;
     margin-top: 5px;
     height: 40px;
     ul{
@@ -68,7 +71,7 @@ header{
 
 .letraNav{
     text-decoration: none;
-    color:rgb(19, 19, 125);
+    color:$colorEstructura;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .letraNav:hover{
@@ -84,7 +87,7 @@ header{
 .aside{
     grid-area: publicidad;
     display: flex;
-    background-color: rgb(214, 167, 48);
+    background-color: $bgColorEstructura;
     flex-direction: column;
     height: 50vh;
     justify-content: center;
@@ -117,7 +120,7 @@ aside:hover img{
     align-self: center;
     margin-bottom: 20px;
     font-size: 25px;
-    color: blue;
+    color: $colorIcons;
 }
 
 aside:hover .iconAside{
@@ -143,7 +146,7 @@ font-size: 0.9rem;
 
 .footer{
     grid-area: footer;
-    background-color:rgb(214, 167, 48);
+    background-color:$bgColorEstructura;
     position: absolute;
     bottom: 0;
     width: 100vw; 
@@ -154,7 +157,7 @@ font-size: 0.9rem;
     margin: 10px 10px;
             i{
                 font-size: 25px;
-                color: blue;
+                color: $colorIcons;
             }
         }
     }
@@ -195,8 +198,7 @@ text-align: center;
 }
 
 .products-container .imagenProducto{
-    border: solid 1px black;
-    border-radius: 15px;
+    @include bordeSolido;
     padding: 5px;
     justify-self: center;
     align-self: center;
@@ -220,7 +222,7 @@ text-align: center;
 
 .oferta{
     margin-bottom:0px;
-    background-color: orangered;
+    background-color: $bgColorOferta;
     color: aliceblue;
     font-size: 20px;
     margin-left: auto;
@@ -295,8 +297,7 @@ text-align: center;
     width: 400px;
     height: 400px;
     padding: 20px;
-    border: solid 1px black;
-    border-radius: 15px;
+    @include bordeSolido;
 }
 
 .labelEnvios{
